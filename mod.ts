@@ -40,7 +40,7 @@ export default function App(props: Props): App<Manifest, State> {
   const _stringToken = typeof token === "string" ? token : token?.get?.() ?? "";
 
   const api = createHttpClient<ClientInterfaceExample>({
-    base: `https://api.github.com/users/guitavano`,
+    base: `https://api.github.com/users/betovawn1`,
     // headers: new Headers({ "Authorization": `Bearer ${stringToken}` }),
     fetcher: fetchSafe,
   });
