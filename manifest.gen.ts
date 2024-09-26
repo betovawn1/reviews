@@ -4,14 +4,16 @@
 
 import * as $$$$$$$$$0 from "./actions/myAction.ts";
 import * as $$$0 from "./loaders/myLoader.ts";
-import * as $$$$$$0 from "./sections/mySection.tsx";
+import * as $$$$$$1 from "./sections/mySection.tsx";
+import * as $$$$$$0 from "./sections/Teste.tsx";
 
 const manifest = {
   "loaders": {
     "reviews-app/loaders/myLoader.ts": $$$0,
   },
   "sections": {
-    "reviews-app/sections/mySection.tsx": $$$$$$0,
+    "reviews-app/sections/mySection.tsx": $$$$$$1,
+    "reviews-app/sections/Teste.tsx": $$$$$$0,
   },
   "actions": {
     "reviews-app/actions/myAction.ts": $$$$$$$$$0,
