@@ -29,10 +29,10 @@ export interface State extends Omit<Props, "token"> {
 }
 
 /**
- * @title App Template
- * @description This is an template of an app to be used as a reference.
+ * @title Reviews App
+ * @description This is the description of the app
  * @category Tools
- * @logo https://
+ * @logo https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/1/0ac02239-61e6-4289-8a36-e78c0975bcc8
  */
 export default function App(props: Props): App<Manifest, State> {
   const { token, account: _account } = props;
@@ -40,7 +40,7 @@ export default function App(props: Props): App<Manifest, State> {
   const _stringToken = typeof token === "string" ? token : token?.get?.() ?? "";
 
   const api = createHttpClient<ClientInterfaceExample>({
-    base: `https://api.github.com/users/betovawn1`,
+    base: `https://api.github.com/users/betovanw1`,
     // headers: new Headers({ "Authorization": `Bearer ${stringToken}` }),
     fetcher: fetchSafe,
   });
@@ -61,9 +61,9 @@ export const preview = () => {
   return {
     Component: PreviewContainer,
     props: {
-      name: "App Template",
-      owner: "deco.cx",
-      description: "This is an template of an app to be used as a reference.",
+      name: "Reviews App",
+      owner: "betoven",
+      description: "This is the description of the app",
       logo: "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/1/0ac02239-61e6-4289-8a36-e78c0975bcc8",
       images: [],
       tabs: [],
